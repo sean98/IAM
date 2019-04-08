@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name" translatable="false">IAM</string>
+    <string name="commit">Commit</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+
+    <string name="required">*Required</string>
+
+    <string name="view_more">View more</string>
+
+    <string name="licTradNum">ID/VID</string>
+    <string name="cid">Serial Number</string>
+    <string name="name">Name</string>
+    <string name="balance">Balance</string>
+    <string name="phone1">Phone 1</string>
+    <string name="phone2">Phone 2</string>
+    <string name="cellular">Cellular</string>
+    <string name="fax">Fax</string>
+    <string name="email">Email</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="salesman">SalesMan</string>
+    <string name="comments">Comments</string>
+
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="duration">Duration</string>
+
+
+    <string name="hint_address">Address</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_notes">Notes</string>
+
+    <string name="hint_address_name">Address Name</string>
+    <string name="hint_city">City</string>
+    <string name="hint_street">Street</string>
+    <string name="hint_street_num">Number</string>
+    <string name="hint_apartment">Apartment</string>
+    <string name="hint_block">Block</string>
+    <string name="hint_zip_code">Zip Code</string>
+
+    <string name="error_address_name_empty">You must enter address description</string>
+    <string name="error_empty_field">You must fill this field</string>
+
+    <string name="valid">Valid</string>
+    <string name="frozen">Frozen</string>
+    <string name="private_cust">Private</string>
+    <string name="company">Company</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="receipt">Receipt</string>
+    <string name="invoice">invoice</string>
+    <string name="credit_invoice">CR-Invoice</string>
+    <string name="order">Order</string>
+    <string name="advance_payment">Advance Payment</string>
+    <string name="shipping_cert">Shipping Cert</string>
+    <string name="sale_quotation">Sale Quotation</string>
+    <string name="other">Other</string>
+
+    <string name="show_open_only">show open only</string>
+    <string name="location_request_title">Location Permission Request</string>
+    <string name="location_request_msg1">We want to know your location only to help you
+        find customers that are near to where you are right now</string>
+    <string name="ok">OK</string>
+
+    <string name="company_address">Company Address</string>
+
+    <string name="activate">activate</string>
+    <string name="no_location">You can\'t access this feature without
+        location permission activated</string>
+
+    <string name="alphabetical">Alphabetical</string>
+    <string name="distance">Distance</string>
+    <string name="group">Group</string>
+    <string name="city">City</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="event_added_to_calendar">Successfully added the event to the calendar</string>
+
+    <string name="no_calendar">You can\'t access this feature without
+        calendar permission activated</string>
+    <string name="calendar_request_title">Calendar Permission Request</string>
+    <string name="calendar_request_msg">We want an access to your calendar information
+        to sync the event and allow you to see it in your google account</string>
+    <string name="no_internet_access">No internet access</string>
+    <string name="no_access_to_server">No access to server</string>
+    <string name="cant_get_location">Couldn\'t find your location</string>
+    <string name="location_request_msg2">We want to know your location to help you fill this form quicker</string>
+    <string name="downloading_data">Downloading data</string>
+    <string name="information_not_available">Information not available</string>
+    <string name="search">Search</string>
+    <string name="options">Options</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="refresh">Refresh</string>
+    <string name="customers">Customers</string>
+    <string name="tasks">Tasks</string>
+    <string name="department">Department</string>
+    <string name="job_title">Title</string>
+    <string name="job_position">Position</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="serial_number_incorrect">Serial number is incorrect</string>
+    <string name="login">Login</string>
+    <string name="no_account">No account yet?\nClick here to Contact us and create one.</string>
+    <string name="logout">Logout</string>
+    <string name="calendar">Calendar"</string>
+    <string name="language">Language</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="description">Description</string>
+    <string name="total_price">Total Price</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="length">Length</string>
+    <string name="units">Units</string>
+    <string name="quantity">Quantity</string>
+    <string name="price_per_quantity">Price per Quantity</string>
+    <string name="details">Details</string>
+
+    <string name="items">Items</string>
+    <string name="doc_num">Doc Number</string>
+    <string name="doc_date">Doc Date</string>
+    <string name="doc_due_date">Doc Due Date</string>
+    <string name="total_before_discount">Total Before Discount</string>
+    <string name="discount">Discount</string>
+    <string name="vat">VAT</string>
+    <string name="total">Total</string>
+    <string name="code">Code</string>
+    <string name="price">Price</string>
+    <string name="paid_sum">Paid Sum</string>
+    <string name="need_to_pay">Need To Pay</string>
+
+    <string name="sunday_letter">S</string>
+    <string name="monday_letter">M</string>
+    <string name="tuesday_letter">T</string>
+    <string name="wensday_letter">W</string>
+    <string name="thursday_letter">T</string>
+    <string name="friday_letter">F</string>
+    <string name="saturday_letter">S</string>
+    <string name="catalog">Catalog</string>
+
+    <string name="leave_without_save">You are about to leave without saving\nare you sure you want to continue?</string>
+    <string name="unsupported_document">unsupported document</string>
+    <string name="type">Customer Type</string>
+    <string name="check_before_save">Are you sure you want to save this changes?</string>
+    <string name="at_least_one_phone">At least 1 phone number should be inserted</string>
+    <string name="fields_not_valid">some fields are not valid</string>
+    <string name="customer_updated">Customer updated</string>
+    <string name="sign_up">Sign-Up for IAM</string>
+    <string name="sign_up_msg">Hi, Please help me sign-in to your awesome app!</string>
+    <string name="translate_msg">A small portion of the words may not be fully translated until the app is restarted</string>
+    <string name="image_fail_upload">Image didn\'t uploaded successfully</string>
+    <string name="image_succ_upload">Image uploaded successfully</string>
+    <string name="back_to_exit">Please click BACK again to exit</string>
+
+
+</resources>

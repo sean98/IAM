@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:transitionName="trans_card"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    tools:context=".Customers.CustomerRecordView"
+    tools:ignore="OnClick">
+    <!--android:layout_marginBottom="3dp"-->
+
+    <LinearLayout
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/type_image"
+                android:transitionName="trans_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@color/colorFieldBlue"
+                android:layout_centerVertical="true"
+                android:src="@drawable/store"
+                app:civ_border_width="1dp"
+                android:layout_marginStart="10dp"
+                app:civ_border_color="#FF000000"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_title_text"
+                android:transitionName="trans_name"
+                android:background="@null"
+                android:lines="1"
+                android:textAlignment="viewStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Sean Goldfarb"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/group_text"
+                    android:transitionName="trans_group"
+                    android:background="@null"
+                    android:textAlignment="viewStart"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Center"/>
+                <TextView
+                    android:id="@+id/city_text"
+                    android:transitionName="trans_city"
+                    android:background="@null"
+                    android:textAlignment="viewStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Tel-aviv"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

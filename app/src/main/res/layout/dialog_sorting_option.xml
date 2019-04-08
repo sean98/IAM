@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select type of sort"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+            <!--<androidx.appcompat.widget.AppCompatRadioButton-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textSize="18sp"/>-->
+
+            <!--<androidx.appcompat.widget.AppCompatRadioButton-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="18sp"/>-->
+            <!--<androidx.appcompat.widget.AppCompatRadioButton-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="18sp"/>-->
+
+            <!--<androidx.appcompat.widget.AppCompatRadioButton-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="18sp"/>-->
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/cancel"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/apply"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>

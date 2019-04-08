@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="commit">אישור</string>
+    <string name="add">הוסף</string>
+    <string name="update">עדכן</string>
+
+    <string name="required">*נדרש</string>
+    <string name="licTradNum">ת.ז/ח.פ</string>
+    <string name="view_more">הצג יותר</string>
+
+    <string name="cid">מספר סידורי</string>
+    <string name="name">שם</string>
+    <string name="balance">יתרת חוב</string>
+    <string name="phone1">טלפון 1</string>
+    <string name="phone2">טלפון 2</string>
+    <string name="cellular">נייד</string>
+    <string name="fax">פקס</string>
+    <string name="email">אימייל</string>
+    <string name="billing_address">כתובת לחיוב</string>
+    <string name="shipping_address">כתובת למשלוח</string>
+    <string name="date">תאריך</string>
+    <string name="start_time">שעת התחלה</string>
+    <string name="duration">למשך</string>
+    <string name="hint_address">כתובת</string>
+    <string name="hint_title">כותרת</string>
+    <string name="hint_notes">הערות</string>
+    <string name="comments">הערות</string>
+    <string name="salesman">איש מכירות</string>
+
+    <string name="hint_address_name">שם כתובת</string>
+    <string name="hint_city">עיר</string>
+    <string name="hint_street">רחוב</string>
+    <string name="hint_street_num">מספר ברחוב</string>
+    <string name="hint_apartment">דירה</string>
+    <string name="hint_block">בלוק</string>
+    <string name="hint_zip_code">מיקוד</string>
+
+    <string name="error_address_name_empty">חובה למלא את שם הכתובת</string>
+    <string name="error_empty_field">שדה זה אינו יכול להיות ריק</string>
+
+    <string name="valid">פעיל</string>
+    <string name="frozen">מוקפא</string>
+    <string name="private_cust">פרטי</string>
+    <string name="company">עסק</string>
+    <string name="apply">אישור</string>
+    <string name="cancel">ביטול</string>
+
+
+    <string name="receipt">קבלה</string>
+    <string name="invoice">חשבונית</string>
+    <string name="credit_invoice">ח.זיכוי</string>
+    <string name="order">הזמנה</string>
+    <string name="advance_payment">מקדמה</string>
+    <string name="shipping_cert">תעודת משלוח</string>
+    <string name="sale_quotation">הצעת מחיר</string>
+    <string name="other">אחר</string>
+
+    <string name="show_open_only">הצג פתוחים בלבד</string>
+
+    <string name="company_address">כתובת חברה</string>
+
+    <string name="location_request_title">בקשה להרשאות מיקום</string>
+    <string name="location_request_msg1">אנחנו רוצים לדעת את המיקום שלך רק
+        כדי לעזור לך למצוא את הלקוחות שקרובים לאיפה שאתה נמצא כרגע</string>
+    <string name="ok">אוקיי</string>
+
+    <string name="activate">להפעיל</string>
+    <string name="no_location">אתה לא יכול להשתמש בפעולה הזאת בלי להפעיל הרשאות מיקום</string>
+
+    <string name="alphabetical">אלפבתי</string>
+    <string name="distance">מרחק</string>
+    <string name="group">קבוצה</string>
+    <string name="city">עיר</string>
+
+    <string name="title_activity_maps">מפה</string>
+
+    <string name="event_added_to_calendar">האירוע נוסף ליומן בהצלחה</string>
+
+    <string name="no_calendar">אתה לא יכול להשתמש בפעולה הזאת בלי להפעיל הרשאות יומן</string>
+    <string name="calendar_request_title">בקשה להרשאות יומן</string>
+    <string name="calendar_request_msg">אנחנו רוצים לעזור לך לסנכרן את האירועים ביומן האישי שלך,
+        לשם כך אנו זקוקים לאישורך לגשת אליו</string>
+    <string name="no_internet_access">אין גישה לאינטרנט</string>
+    <string name="no_access_to_server">אין גישה לשרת</string>
+    <string name="cant_get_location">לא ניתן למצוא את מיקומך</string>
+    <string name="location_request_msg2">אנחנו רוצים לדעת את המיקום שלך כדי לעזור לך למלא את הטופס מהר יותר</string>
+    <string name="downloading_data">מוריד נתונים</string>
+    <string name="information_not_available">מידע לא זמין</string>
+    <string name="search">חיפוש</string>
+    <string name="options">אפשרויות</string>
+    <string name="filter">סנן</string>
+    <string name="sort">מיין</string>
+    <string name="show_on_map">הצג על המפה</string>
+    <string name="refresh">רענן</string>
+    <string name="customers">לקוחות</string>
+    <string name="tasks">משימות</string>
+    <string name="department">מחלקה</string>
+    <string name="job_title">תיאור תפקיד</string>
+    <string name="job_position">תפקיד</string>
+    <string name="authenticating">מבצע אימות</string>
+    <string name="serial_number">מספר סידורי</string>
+    <string name="serial_number_incorrect">מספר סידורי לא תקין</string>
+    <string name="login">התחבר</string>
+    <string name="no_account">עדיין אין לך משתמש?\nלחץ כאן כדי ליצור איתנו קשר ולהירשם</string>
+    <string name="logout">התנתקות</string>
+    <string name="calendar">לוח שנה</string>
+    <string name="language">שפות</string>
+    <string name="open">פתוח</string>
+    <string name="close">סגור</string>
+
+    <string name="description">תיאור</string>
+    <string name="total_price">סה"כ מחיר</string>
+    <string name="height">גובה</string>
+    <string name="width">רוחב</string>
+    <string name="length">אורך</string>
+    <string name="units">יחידות</string>
+    <string name="quantity">כמות</string>
+    <string name="price_per_quantity">מחיר לכמות</string>
+    <string name="details">פרטים</string>
+    <string name="items">פריטים</string>
+    <string name="doc_num">מספר מסמך</string>
+    <string name="doc_date">תאריך אסמכתא</string>
+    <string name="doc_due_date">תאריך ערך</string>
+    <string name="total_before_discount">סה"כ לפני הנחה</string>
+    <string name="discount">הנחה</string>
+    <string name="vat">מע"מ</string>
+    <string name="total">סה"כ</string>
+    <string name="code">מק\"ט</string>
+    <string name="price">מחיר</string>
+    <string name="paid_sum">שולם</string>
+    <string name="need_to_pay">יתרה לתשלום</string>
+
+    <string name="sunday_letter">א</string>
+    <string name="monday_letter">ב</string>
+    <string name="tuesday_letter">ג</string>
+    <string name="wensday_letter">ד</string>
+    <string name="thursday_letter">ה</string>
+    <string name="friday_letter">ו</string>
+    <string name="saturday_letter">ש</string>
+
+    <string name="catalog">קטלוג</string>
+    <string name="leave_without_save">אתה עומד לעזוב מבלי לשמור\nהאם אתה בטוח שברצונך להמשיך?</string>
+    <string name="unsupported_document">מסמך לא נתמך</string>
+    <string name="type">סוג לקוח</string>
+    <string name="check_before_save">האם אתה בטוח שברצונך לשמור את השינויים?</string>
+    <string name="at_least_one_phone">יש להכניס לפחות מספר טלפון אחד</string>
+    <string name="fields_not_valid">חלק מהשדות לא תקינים</string>
+    <string name="customer_updated">לקוח התעדכן</string>
+    <string name="sign_up">הרשמה לIAM</string>
+    <string name="sign_up_msg">היי, בבקשה תעזרו לי להרשם לאפליקצייה המגניבה שלכם!</string>
+    <string name="translate_msg">חלק קטן מן המילים עשוי להיות לא מתורגם במלואו עד להפעלה מחדש של האפליקציה</string>
+    <string name="image_fail_upload">התמונה נכשלה בהעלאה</string>
+    <string name="image_succ_upload">התמונה עלתה בהצלחה</string>
+    <string name="back_to_exit">לחץ שוב חזור בשביל לצאת מהאפליקצייה</string>
+
+
+</resources>

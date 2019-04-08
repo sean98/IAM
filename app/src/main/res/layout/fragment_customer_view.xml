@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customers.CustomerView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit_fab"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_mode_edit_white_24dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_card_view">
+            <LinearLayout
+                android:focusableInTouchMode ="true"
+                android:focusable ="true"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/account_card_details_outline"
+                                android:tint="@color/colorFieldBlue"
+                                android:gravity="center_vertical"
+
+                                android:layout_marginEnd="5dp"/>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/licTradNum">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/licTradNum_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:enabled="false"
+                                    android:inputType="text"
+                                    android:text="203679816000"
+                                    android:maxLines="1"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="8dp"
+                            android:layout_marginEnd="5dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/card_bulleted"
+                                android:tint="@color/colorFieldBlue"/>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/cid">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/code_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:inputType="text"
+                                    android:enabled="false"
+                                    android:background="@null"
+                                    android:text="203679816000"
+                                    android:maxLines="1"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/account_circle"
+                            android:tint="@color/colorFieldBlue"
+                            android:layout_marginEnd="5dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/name_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorFieldBlue"
+                                android:enabled="false"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_alignParentStart="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:layout_marginStart="5dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/cash_usd"
+                                android:tint="@color/colorFieldBlue"
+                                android:layout_marginEnd="5dp"/>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/balance">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/balance_text"
+                                    android:background="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:inputType="text"
+                                    android:enabled="false"
+                                    android:maxLines="1"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/view_finance_history_button"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            app:iconTint="@color/colorWhite"
+                            app:iconSize="25dp"
+                            app:icon="@drawable/history"
+                            android:backgroundTint="@color/colorFieldBlue"
+                            android:text="@string/view_more"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View style="@style/Divider"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/showDocumentButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentStart="true"
+                        app:cardCornerRadius="3dp"
+                        android:backgroundTint="@color/colorFieldBlue">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/file_document_box_multiple_outline"
+                            android:tint="@android:color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/addEventButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentEnd="true"
+                        app:cardCornerRadius="3dp"
+                        android:backgroundTint="@color/colorFieldBlue">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/calendar_plus"
+                            android:tint="@android:color/white"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+                <View style="@style/Divider"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="5dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/phone"
+                                android:tint="@color/colorFieldBlue"
+                                android:layout_marginEnd="10dp"/>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone1">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/phone1_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"                            android:src="@drawable/smartphone"
+                                android:tint="@color/colorFieldBlue"
+                                android:layout_marginEnd="5dp"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/cellular">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/cell_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:linksClickable="true"
+                                    android:text="054-7380608"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="5dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"                            android:src="@drawable/phone"
+                                android:tint="@color/colorFieldBlue"
+                                android:layout_marginEnd="5dp"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone2">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/phone2_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:text="054-7380608"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"                            android:src="@drawable/fax"
+                                android:tint="@color/colorFieldBlue"
+                                android:layout_marginEnd="5dp"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/fax">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/fax_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorFieldBlue"
+                                    android:text="054-7380608"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:textSize="18sp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"                        android:src="@drawable/email"
+                            android:tint="@color/colorFieldBlue"
+                            android:layout_marginEnd="5dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/colorFieldBlue"
+                                android:inputType="none"
+                                android:focusable="false"
+                                android:text="sean98goldfarb@gmail.com"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View style="@style/Divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/map_marker"
+                            android:tint="@color/colorFieldBlue"
+                            android:layout_marginEnd="10dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/billing_address">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/billing_address_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorFieldBlue"
+                                android:focusable="false"
+                                android:inputType="none"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/map_marker"
+                            android:tint="@color/colorFieldBlue"
+                            android:layout_marginEnd="10dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/shipping_address">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/shipping_address_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="viewStart"
+                                android:focusable="false"
+                                android:inputType="none"
+                                android:textColor="@color/colorFieldBlue"
+                                android:textSize="18sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:src="@drawable/account_tie"
+                            android:tint="@color/colorFieldBlue"
+                            android:layout_marginEnd="10dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/salesman">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/salesman_text"
+                                android:inputType="none"
+                                android:focusable="false"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorFieldBlue"
+                                android:enabled="false"
+                                android:textSize="18sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View style="@style/Divider"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_event_note_blue_48dp"
+                        android:tint="@color/colorFieldBlue"
+                        android:layout_marginEnd="10dp"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/comments">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/comments_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorFieldBlue"
+                            android:enabled="false"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="20dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

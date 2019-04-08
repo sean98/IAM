@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Calenadar.Events.CreateEventFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp">
+
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="5dp">
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:visibility="gone">
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_bookmark_blue_48dp"
+                   android:tint="@color/colorFieldBlue"
+                   android:layout_marginEnd="10dp"/>
+               <Spinner
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content">
+               </Spinner>
+           </LinearLayout>
+
+       </LinearLayout>
+       <View style="@style/Divider" />
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:hint="@string/date">
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/dateTextField"
+               android:drawableStart="@drawable/ic_date_range_blue_24dp"
+               android:focusable="false"
+               android:drawableTint="@color/colorFieldBlue"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:textColor="@color/colorFieldBlue"
+               android:textSize="20sp"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp">
+           <com.google.android.material.textfield.TextInputLayout
+               android:focusable="false"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="5dp"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:hint="@string/start_time">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/startTimeTextField"
+                   android:drawableStart="@drawable/ic_access_time_blue_24dp"
+                   android:focusable="false"
+                   android:drawableTint="@color/colorFieldBlue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorFieldBlue"
+                   android:inputType="none"
+                   android:textSize="20sp"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="5dp"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:hint="@string/duration">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/durationTimeTextField"
+                   android:drawableStart="@drawable/timer_sand"
+                   android:focusable="false"
+                   android:drawableTint="@color/colorFieldBlue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorFieldBlue"
+                   android:textSize="20sp"/>
+           </com.google.android.material.textfield.TextInputLayout>
+       </LinearLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="5dp"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:hint="@string/hint_address">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/locationTextField"
+                   android:drawableStart="@drawable/ic_edit_location_blue_48dp"
+                   android:drawableTint="@color/colorFieldBlue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorFieldBlue"
+                   android:focusable="false"
+
+                   android:textSize="20sp"/>
+           </com.google.android.material.textfield.TextInputLayout>
+       <View style="@style/Divider"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="10dp">
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_title_blue_48dp"
+               android:tint="@color/colorFieldBlue"
+               android:layout_marginEnd="10dp"/>
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:helperText="@string/required"
+               android:hint="@string/hint_title">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/titleTextField"
+                   android:imeActionLabel="@string/hint_city"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorFieldBlue"
+                   android:inputType="text"
+                   android:maxLines="1"
+                   android:textSize="20sp"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="10dp">
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_event_note_blue_48dp"
+               android:tint="@color/colorFieldBlue"
+               android:layout_marginEnd="10dp"/>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/hint_notes">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/notesTextField"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorFieldBlue"
+                   android:textSize="20sp"/>
+           </com.google.android.material.textfield.TextInputLayout>
+       </LinearLayout>
+   </LinearLayout>
+    </ScrollView>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/add_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_alignParentBottom="true"
+    android:textColor="@color/colorFieldBlue"
+    android:text="@string/add"
+    android:textSize="24sp"
+    android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
